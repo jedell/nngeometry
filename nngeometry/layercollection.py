@@ -35,7 +35,7 @@ class LayerCollection:
             self.layers = layers
             raise NotImplementedError
 
-    def from_model(model, ignore_unsupported_layers=False):
+    def from_model(model, ignore_unsupported_layers=True):
         """
         Constructs a new LayerCollection object by using all parameters
         of the model passed as argument.
